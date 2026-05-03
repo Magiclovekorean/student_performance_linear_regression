@@ -1,7 +1,7 @@
 # AGENTS.md
 
 ## Core Rules
-- Use only NumPy; no high-level ML libraries (scikit-learn, etc.)
+- Use NumPy and pandas; no high-level ML libraries (scikit-learn, etc.)
 - Follow modular pipeline structure per README: preprocessing → split → model → train → evaluate
 
 ## Repo-Specific Facts
@@ -12,5 +12,5 @@
 - README references `config.py` and `src/data.py` which don't exist yet; align new files with README's stated structure
 
 ## Commands
-- Install dependencies: `venv/bin/pip install numpy`
+- Install dependencies: `venv/bin/pip install numpy pandas`
 - Run pipeline: `venv/bin/python main.py` (once implemented)

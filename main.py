@@ -1,7 +1,7 @@
-from src.preprocessing
+from src.preprocessing import preprocess_data
 
 def main():
-    pass
+    x, y = preprocess_data()
 
 if __name__ == "__main__":
     main()
