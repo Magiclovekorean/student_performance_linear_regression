@@ -1,2 +1,2 @@
-def predict(X, w, b):
+def predict_value(X, w, b):
     return X * w + b
