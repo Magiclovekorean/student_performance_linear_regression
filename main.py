@@ -9,7 +9,8 @@ def main():
     X, y = preprocess_data()
     X_train, X_test, y_train, y_test = split_data(X, y, TRAIN_RATIO)
     initial_w = np.zeros(X_train.shape[1])
-    print(train_model(X_train, initial_w, 0, y_train, LEARNING_RATE, GRADIENT_DESCENT_ITERS))
+    initial_b = 0
+    train_model(X_train, initial_w, initial_b, y_train, LEARNING_RATE, GRADIENT_DESCENT_ITERS)
 
 if __name__ == "__main__":
     main()
