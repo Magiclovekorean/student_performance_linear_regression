@@ -10,7 +10,7 @@ def train_model(X, w, b, y, alpha, iterations):
         b = b - alpha * dj_db
 
         cost = compute_cost(X, y, w, b)
-        if i % 10000 == 0 and i > 0:
+        if i % 1000 == 0 and i > 0:
             print(f"Iteration {i:4}, Cost {cost:.4f}")
     print(f"Finished gradient descent with cost {cost:.4f}, w {w} and b {b}")
 
